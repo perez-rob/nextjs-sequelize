@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "pscale connect bbtest main --execute 'npm run build'",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
@@ -17,7 +17,6 @@
     "nprogress": "^0.2.0",
     "pg": "^7.0.0",
     "pg-hstore": "^2.3.3",
-    "planetscale-node": "^0.1.0",
     "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
