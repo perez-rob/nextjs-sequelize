@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "pscale connect bbtest main --execute 'npm run build'",
     "start": "next start"
   },
   "dependencies": {
