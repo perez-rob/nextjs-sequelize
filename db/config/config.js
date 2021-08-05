@@ -7,6 +7,12 @@ module.exports = {
     database: process.env.DB_NAME,
     host: process.env.DB_HOST,
     dialect: 'mysql',
+    pool: {
+      max: 5,
+      min: 0,
+      acuire: 30000,
+      idle: 10000,
+    },
   },
   test: {
     username: process.env.DB_USER,
@@ -16,6 +22,12 @@ module.exports = {
     host: process.env.DB_HOST,
     dialect: 'mysql',
     logging: false,
+    pool: {
+      max: 5,
+      min: 0,
+      acuire: 30000,
+      idle: 10000,
+    },
   },
   production: {
     username: process.env.DB_USER,
@@ -26,6 +38,12 @@ module.exports = {
     dialect: 'mysql',
     dialectOptions: {
       ssl: true,
+    },
+    pool: {
+      max: 5,
+      min: 0,
+      acuire: 30000,
+      idle: 10000,
     },
   },
 };
